@@ -48,7 +48,7 @@ require_once 'check_auth.php';
     <div class="container">
   
       <h1>
-        <a href="#" class="logo">ACTC-Public Transport</a>
+        <a href="#C:\Users\User\OneDrive\Desktop\project for rand\clean_repo\ACTC-LOGO--removebg-preview.png" class="logo">ACTC-Public Transport</a>
       </h1>
       <?php 
 // Include this at the top of your header file
@@ -134,7 +134,7 @@ require_once 'check_auth.php';
       -->
 
       <section class="section hero" aria-label="home" id="home"
-        style="background-image: url('../images/inside2.jpg')">
+        style="background-image: url('inside2.jpg')">
         <div class="container">
 
           <div class="hero-content">
