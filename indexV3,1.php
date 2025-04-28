@@ -1,5 +1,5 @@
-<?php 
 
+<?php 
 require_once 'check_auth.php';
 ?>
 <!DOCTYPE html>
@@ -12,7 +12,7 @@ require_once 'check_auth.php';
   <title>ACTC - Public Transport</title>
   <!--map-->
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   
   <!-- 
     - favicon
@@ -46,10 +46,9 @@ require_once 'check_auth.php';
 
   <header class="header" data-header>
     <div class="container">
-  
-      <h1>
-        <a href="#C:\Users\User\OneDrive\Desktop\project for rand\clean_repo\ACTC-LOGO--removebg-preview.png" class="logo">ACTC-Public Transport</a>
-      </h1>
+        <div>
+        <img src="/images/ACTC-LOGO.png" class="logo" alt="ACTC Public Transport">0
+        </div>
       <?php 
 // Include this at the top of your header file
 require_once 'check_auth.php';
@@ -105,14 +104,11 @@ require_once 'check_auth.php';
         
       
   
-      <!-- Search Bar -->
-      <div class="header-search-bar">
-        <input type="text" class="search-input" placeholder="Search..." aria-label="Search">
-        <button class="search-button" aria-label="Search">
-          <ion-icon name="search-outline"></ion-icon>
-        </button>
-      </div>
-  
+      <!-- Search Button -->
+      <button class="search-btn" aria-label="Search" href='search_bar.html'>
+      <ion-icon name="search-outline"></ion-icon>
+    </button>
+</div>
       <button class="nav-open-btn" aria-label="Open menu" data-nav-toggler>
         <ion-icon name="menu-outline"></ion-icon>
       </button>
@@ -123,15 +119,11 @@ require_once 'check_auth.php';
   </header>
   
 
-<!-- test test, does it show on the github web version? -->
-
 
   <main>
     <article>
 
-      <!-- 
-        - #HERO
-      -->
+     
 
       <section class="section hero" aria-label="home" id="home"
         style="background-image: url('inside2.jpg')">
@@ -144,7 +136,7 @@ require_once 'check_auth.php';
             </h2>
 
             <p class="hero-text">
-              Yalla, hop on Beirut Bus! From souk adventures to Corniche cruises-w ba3dna faster than your cousin’s dabke moves!""
+              Yalla, hop on Beirut Bus! From souk adventures to Corniche cruises-w ba3dna faster than your cousin's dabke moves!""
             </p>
           
             <a href="#" class="btn-outline">View Services</a>
@@ -158,15 +150,8 @@ require_once 'check_auth.php';
           </div>
 
         </div>
-      </section>
-
-
-
-
-
-      <!-- 
-        - #ABOUT
-      -->
+      </section>- 
+        
 
       <section class="section about" id="about" aria-label="about">
         <div class="container">
@@ -717,8 +702,8 @@ if (isset($_GET['review']) && $_GET['review'] === 'success') {
   <!-- 
     - custom js link
   -->
+  
   <script src="scriptV3.js" defer></script>
-
   <!-- 
     - ionicon link
   -->
